@@ -7,44 +7,55 @@
   <style>
     body {
       margin: 0;
-      background-color: #0e0e0e;
+      background: radial-gradient(ellipse at center, #0e0e0e 0%, #000000 100%);
       color: #fff;
       font-family: 'Segoe UI', sans-serif;
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
       flex-direction: column;
+      height: 100vh;
       text-align: center;
     }
-    h1 {
-      font-size: 3rem;
-      margin-bottom: 10px;
-      letter-spacing: 2px;
-    }
-    p {
-      font-size: 1.2rem;
-      color: #aaa;
+    .logo {
+      max-width: 160px;
       margin-bottom: 30px;
     }
+    h1 {
+      font-size: 3.5rem;
+      margin: 0;
+      background: linear-gradient(90deg, #d4af37, #cfa648);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: bold;
+      letter-spacing: 3px;
+    }
+    p {
+      color: #aaa;
+      font-size: 1.2rem;
+      margin-top: 15px;
+      margin-bottom: 40px;
+    }
     .email-box {
-      background: #1a1a1a;
+      background: #1e1e1e;
       border: 1px solid #444;
-      padding: 10px;
-      border-radius: 6px;
+      padding: 12px 15px;
+      border-radius: 8px;
     }
     input {
       background: transparent;
       border: none;
       color: white;
-      outline: none;
       font-size: 1rem;
+      outline: none;
+      width: 250px;
     }
   </style>
 </head>
 <body>
-  <h1>Lyontra</h1>
-  <p>We're launching soon.</p>
+  <img src="logo.png" alt="Lyontra Logo" class="logo" />
+  <h1>LYONTRA</h1>
+  <p>We're launching soon. Get ready to experience the evolution.</p>
   <div class="email-box">
     <input type="email" placeholder="your@email.com (optional)">
   </div>
